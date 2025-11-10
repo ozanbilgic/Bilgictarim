@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bilgiç Tarım Hayvancılık | Ozan Bilgiç</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#2E7D32;
+      --green-light:#A5D6A7;
+      --brown:#795548;
+      --bg:#FAFAF5;
+      --ink:#253238;
+      --ink-soft:#4b5a60;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:var(--green);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1080px;margin:0 auto;padding:0 20px}
+    header{background:linear-gradient(135deg,var(--green) 0%, #1b5e20 70%);color:var(--white);padding:36px 0 28px}
+    .brand{display:flex;align-items:center;gap:18px}
+    .brand img{width:72px;height:auto;border-radius:8px;background:#fff;padding:6px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+    .brand h1{font-family:Poppins, sans-serif;margin:0;font-size:28px;letter-spacing:.2px}
+    .tag{margin:6px 0 0;color:#e6f4ea;font-weight:300}
+    nav{background:var(--green);position:sticky;top:0;z-index:50}
+    nav .nav-inner{display:flex;gap:18px;overflow:auto;padding:10px 20px}
+    nav a{color:#e8f5e9;font-weight:600;padding:8px 10px;border-radius:6px;white-space:nowrap}
+    nav a:hover{background:var(--green-light);color:#1b5e20}
+    section{padding:48px 0}
+    h2{font-family:Poppins, sans-serif;color:var(--green);margin:0 0 18px;font-size:26px}
+    .card{background:var(--white);border:1px solid #e9ecef;border-radius:14px;padding:22px;box-shadow:0 8px 30px rgba(21,72,45,.08)}
+    .grid{display:grid;gap:20px}
+    @media(min-width:768px){ .grid.cols-2{grid-template-columns:1fr 1fr} .grid.cols-3{grid-template-columns:1fr 1fr 1fr} }
+    .pill{display:inline-block;background:var(--green-light);color:#1b5e20;padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px;margin-right:6px}
+    .project{display:flex;gap:16px;align-items:flex-start}
+    .project .dot{width:12px;height:12px;border-radius:50%;background:var(--green);margin-top:7px;flex-shrink:0}
+    .project h3{margin:0 0 6px;font-size:18px;color:var(--ink)}
+    .project p{margin:0;color:var(--ink-soft)}
+    .gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:768px){.gallery{grid-template-columns:repeat(4,1fr)}}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;border:1px solid #e9ecef}
+    footer{background:#eef7ee;border-top:1px solid #e0eee0;padding:28px 0;color:#294037;font-size:14px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;font-weight:700;border:2px solid transparent}
+    .btn.primary{background:var(--green);color:#fff}
+    .btn.primary:hover{opacity:.92}
+    .btn.ghost{border-color:var(--green);color:var(--green);background:transparent}
+    .btn.ghost:hover{background:var(--green-light)}
+    .muted{color:#5f6b70}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <img src="logo.jpeg" alt="Bilgiç Tarım Hayvancılık Logosu">
+        <div>
+          <h1>Bilgiç Tarım Hayvancılık</h1>
+          <div class="tag">Sürdürülebilir üretim · Modern hayvancılık · Doğaya saygı</div>
+        </div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#iletisim">Teklif Al</a>
+        <a class="btn ghost" href="#projeler">Projelerimizi Gör</a>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="nav-inner container">
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#projeler">Projeler</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#hobi">Hobiler</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#blog">Blog</a>
+      <a href="#iletisim">İletişim</a>
+    </div>
+  </nav>
+  <main class="container">
+    <section id="hakkimda">
+      <h2>Hakkımda</h2>
+      <div class="card">
+        <p>Ben <strong>Ozan Bilgiç</strong>. <strong>Bilgiç Tarım Hayvancılık</strong> bünyesinde, sürdürülebilir yöntemlerle verimliliği artıran, doğaya saygılı üretim modelleri geliştiriyor; akıllı çiftlik teknolojileri ve hayvan refahı standartlarını projelerimize entegre ediyoruz.</p>
+        <div style="margin-top:10px">
+          <span class="pill">Sürdürülebilirlik</span>
+          <span class="pill">Akıllı Çiftlik</span>
+          <span class="pill">Kalite & Güven</span>
+        </div>
+      </div>
+    </section>
+    <section id="hizmetler">
+      <h2>Hizmetler</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>Organik Yem Tedariki</h3><p class="muted">Sertifikalı tedarik zinciriyle yüksek kalite yem.</p></div>
+        <div class="card"><h3>Çiftlik Danışmanlığı</h3><p class="muted">Veri odaklı, sensör entegre yönetim sistemi kurulumu.</p></div>
+        <div class="card"><h3>Refah Standartları</h3><p class="muted">Hayvan sağlığı ve verimlilik için iyileştirme planları.</p></div>
+      </div>
+    </section>
+    <section id="projeler">
+      <h2>Projeler</h2>
+      <div class="grid">
+        <div class="card project"><div class="dot"></div><div><h3>Organik Yem Üretim Tesisi</h3><p>Enerji verimli hatlar ve atık azaltım politikalarıyla yıllık X ton üretim.</p></div></div>
+        <div class="card project"><div class="dot"></div><div><h3>Akıllı Çiftlik Yönetimi</h3><p>IoT sensörleriyle anlık takip, otomatik besleme ve iklimlendirme kontrolü.</p></div></div>
+        <div class="card project"><div class="dot"></div><div><h3>Refah Odaklı Bakım</h3><p>Refah protokolleri, izleme formları ve eğitim programları.</p></div></div>
+      </div>
+    </section>
+    <section id="hobi">
+      <h2>Hobiler</h2>
+      <div class="card"><p>Doğa yürüyüşleri, tarım fotoğrafçılığı ve yeni tarım teknolojilerini keşfetmek. Ayrıca sütlü tatlılar 🍮 ayrı bir tutku.</p></div>
+    </section>
+    <section id="galeri">
+      <h2>Fotoğraf Galerisi</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1500937386664-56f3d81d9005?q=80&w=1200&auto=format&fit=crop" alt="Tarla">
+        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=1200&auto=format&fit=crop" alt="Çiftlik">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Üretim">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Ekipman">
+      </div>
+    </section>
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="grid cols-2">
+        <article class="card"><h3>Modern Tarımın Geleceği</h3><p class="muted">Sensörler, veri analitiği ve otomasyon sistemleri verimliliği artırıyor.</p></article>
+        <article class="card"><h3>Doğaya Saygılı Üretim</h3><p class="muted">Döngüsel ekonomi ve su yönetimiyle toprak sürdürülebilirliği.</p></article>
+      </div>
+    </section>
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <div class="card">
+        <p><strong>Adres:</strong> Türkiye</p>
+        <p><strong>E-posta:</strong> <a href="mailto:info@bilgictarim.com.tr">info@bilgictarim.com.tr</a></p>
+        <p><strong>Telefon:</strong> +90 5XX XXX XX XX</p>
+        <div class="cta">
+          <a class="btn ghost" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost" href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn ghost" href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">© 2025 Ozan Bilgiç · Bilgiç Tarım Hayvancılık · Tüm hakları saklıdır.</div></footer>
+</body>
+</html>
